@@ -1,0 +1,42 @@
+body {
+    background-color: #caa681;
+    margin: auto;
+}
+
+img {
+    aspect-ratio: 1;
+    width: 500px;
+    height: 500px;
+    border-radius: 10px;
+    transition: all 0.3s linear; 
+}
+
+.anterior, .siguiente {
+    border: none;
+    border-radius: 15px;
+    padding: 40px 38px;
+    cursor: pointer;
+    transition: background-color 0.2s linear;
+    background: url("./Iconos/flecha.png") no-repeat center center ;
+    transition: translate 0.1s linear;
+}
+
+.anterior {
+    transform: rotate(180deg);
+}
+
+.anterior:active {
+    translate: -10px 0px;
+}
+
+.siguiente:active{
+    translate: 10px 0px;
+}
+
+.slider-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    gap: 3rem;
+}
